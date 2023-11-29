@@ -15,8 +15,3 @@ export default App;
 
 
 
-"scripts": {
-    "start": "react-scripts start",
-    // outros scripts aqui
-  }
-  

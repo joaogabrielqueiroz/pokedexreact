@@ -54,24 +54,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1, marginbottom: "2em" }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{backgroundColor: "black" }}>
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
+          
             <MenuIcon />
-          </IconButton>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            MUI
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }} >
+           Pokemon
+
+           <Box component="img" Search="/assets/pokemon-logo.png"/>
           </Typography>
           <Search>
             <SearchIconWrapper>
